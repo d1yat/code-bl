@@ -8,13 +8,19 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Blog Home - Brother Labs Template</title>
+  <title><?php echo isset($title) ? "{$title} Page | Brother Labs" : NULL; ?></title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="<?php echo base_url(); ?>assets/css/blog-home.css" rel="stylesheet">
+  
+  <style>
+      .py-5 a {
+          color: #fff;
+      }
+  </style>
 
 </head>
 
@@ -184,7 +190,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        <p class="m-0 text-center text-white">Copyright &copy; <a href="http://brotherlabs.id">Brother Labs</a> 2019</p>
     </div>
     <!-- /.container -->
   </footer>
