@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://development.brotherlabs.id/';
+$config['base_url'] = 'http://code.brotherlabs.id/';
 
 /*
 |--------------------------------------------------------------------------
